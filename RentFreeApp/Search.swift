@@ -17,7 +17,12 @@ class ViewController: UIViewController{
 struct Search: View {
     
     @State var location: String=""
-    @State var date: Date = Date()
+    
+    @State var startdate: Date = Date()
+    @State var enddate: Date = Date()
+    
+    @State private var region =
+        MKCoordinateRegion(center:CLLocationCoordinate2D(latitude:-33.80038111388358, longitude: 151.0711902132999), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.1))
     
     /*
     Map
@@ -51,41 +56,49 @@ struct Search: View {
                     
                 )
                 
-                Text("Test")
-                    .frame(.right)
+                Map(coordinateRegion: $region)
+                    .frame(height: 320)
+                
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 15)
+                            .stroke(Color.white, lineWidth: 1)
+                        
+                    )
+                    .listRowSeparator(.hidden)
+                    .padding(.bottom, 20.0)
+                
+                Text("I'm staying for...")
                     .listRowSeparator(.hidden)
                 
-                DatePicker("Start Date", selection: $date)
+                DatePicker("Start Date", selection: $startdate)
                     .listRowSeparator(.hidden)
                     .labelsHidden()
-                        .frame(width: 270, height: 80, alignment: .center)
+                        .frame(width: 290, height: 20, alignment: .center)
+                
+                Text("To:")
+                    .listRowSeparator(.hidden)
+                
+                DatePicker("End Date", selection: $enddate)
+                    .listRowSeparator(.hidden)
+                    .labelsHidden()
+                    .frame(width: 290, height: 20, alignment: .center)
                         
             }
             
             .scrollContentBackground(.hidden)
             
-            /*
-            Map(coordinateRegion: $region)
-                .frame(height: 370)
             
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.white, lineWidth: 1)
-                    
-                )
-                .padding(.bottom, 20.0)
-            */
             
-            Text("And I'm staying for:")
+    
             
             Button("Next"){
                 print("Button tapped!")
             }
             
-            .padding(.bottom, 20.0)
+           // .padding(.bottom, 20.0)
             
         }
-        .padding(.all)
+        //.padding(.all)
  
     }
 }
