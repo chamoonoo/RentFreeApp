@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		373A439A2999ACED004A2685 /* comic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 373A43992999ACED004A2685 /* comic.ttf */; };
 		373A43D2299B1141004A2685 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A43D1299B1141004A2685 /* MapView.swift */; };
-		373A43D4299C4093004A2685 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 373A43D3299C4093004A2685 /* landmarkData.json */; };
 		373A43D6299C40CC004A2685 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373A43D5299C40CC004A2685 /* Landmark.swift */; };
 		37C650C12999A088006032C1 /* RentFreeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C650C02999A088006032C1 /* RentFreeAppApp.swift */; };
-		37C650C32999A088006032C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C650C22999A088006032C1 /* ContentView.swift */; };
+		37C650C32999A088006032C1 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C650C22999A088006032C1 /* Search.swift */; };
 		37C650C52999A089006032C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C650C42999A089006032C1 /* Assets.xcassets */; };
 		37C650C82999A089006032C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C650C72999A089006032C1 /* Preview Assets.xcassets */; };
 		37C650D22999A089006032C1 /* RentFreeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C650D12999A089006032C1 /* RentFreeAppTests.swift */; };
@@ -38,13 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		373A43992999ACED004A2685 /* comic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = comic.ttf; path = ../../../Downloads/comic.ttf; sourceTree = "<group>"; };
 		373A43D1299B1141004A2685 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		373A43D3299C4093004A2685 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../../../../Downloads/landmarkData.json; sourceTree = "<group>"; };
 		373A43D5299C40CC004A2685 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		37C650BD2999A088006032C1 /* RentFreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentFreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C650C02999A088006032C1 /* RentFreeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentFreeAppApp.swift; sourceTree = "<group>"; };
-		37C650C22999A088006032C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37C650C22999A088006032C1 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		37C650C42999A089006032C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37C650C72999A089006032C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37C650CD2999A089006032C1 /* RentFreeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentFreeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +78,6 @@
 		37C650B42999A088006032C1 = {
 			isa = PBXGroup;
 			children = (
-				373A43992999ACED004A2685 /* comic.ttf */,
 				37C650BF2999A088006032C1 /* RentFreeApp */,
 				37C650D02999A089006032C1 /* RentFreeAppTests */,
 				37C650DA2999A089006032C1 /* RentFreeAppUITests */,
@@ -104,9 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				37C650C02999A088006032C1 /* RentFreeAppApp.swift */,
-				37C650C22999A088006032C1 /* ContentView.swift */,
+				37C650C22999A088006032C1 /* Search.swift */,
 				373A43D1299B1141004A2685 /* MapView.swift */,
-				373A43D3299C4093004A2685 /* landmarkData.json */,
 				373A43D5299C40CC004A2685 /* Landmark.swift */,
 				37C650C42999A089006032C1 /* Assets.xcassets */,
 				37C650C62999A089006032C1 /* Preview Content */,
@@ -243,8 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				373A439A2999ACED004A2685 /* comic.ttf in Resources */,
-				373A43D4299C4093004A2685 /* landmarkData.json in Resources */,
 				37C650C82999A089006032C1 /* Preview Assets.xcassets in Resources */,
 				37C650C52999A089006032C1 /* Assets.xcassets in Resources */,
 			);
@@ -271,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C650C32999A088006032C1 /* ContentView.swift in Sources */,
+				37C650C32999A088006032C1 /* Search.swift in Sources */,
 				373A43D2299B1141004A2685 /* MapView.swift in Sources */,
 				37C650C12999A088006032C1 /* RentFreeAppApp.swift in Sources */,
 				373A43D6299C40CC004A2685 /* Landmark.swift in Sources */,

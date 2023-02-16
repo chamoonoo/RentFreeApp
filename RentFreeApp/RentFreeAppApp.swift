@@ -11,7 +11,7 @@ import SwiftUI
 struct RentFreeAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Search()
         }
     }
 }
